@@ -1,5 +1,3 @@
-
-
 out vec2 lmcoord;
 out vec2 texcoord;
 out vec4 glcolor;
@@ -15,4 +13,5 @@ void main() {
 	glcolor = gl_Color;
 	normal = gl_NormalMatrix * gl_Normal;
 	normal = mat3(gbufferModelViewInverse) * normal;
+
 }
